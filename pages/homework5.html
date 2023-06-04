@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="description" content="Domestic Products">
+        <meta name="keywords" content="beverage,store,drink,snack">
+        <meta name="author" content="Luis Hurtado"> 
+        <meta name="generator" content="Brackets">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Beverage Company</title>
+        <link rel="stylesheet" href="../css/homework.css">
+    </head>
+    <body id="products-page">
+        <div id="menu">
+            <!--Menu links for current webpages inside The Beverage Company page-->
+            <span class="menu-title">MENU</span>
+            <a class="menu-font" href="./homework3.html">Homepage</a>
+            <a class="menu-font" href="./homework2.html">About</a>
+            <a class="menu-font" href="./homework4.html">Services</a>
+            <a class="menu-font" href="./homework5.html">Domestic Products</a>
+            <a class="menu-font" href="./homework7.html">International Products</a>
+            <a class="menu-font" href="./homework6.html">Resources</a>
+        </div>
+        <div id="content">
+            <div class="title-wrapper">
+                <h1>The Beverage Company</h1>
+            </div>
+            <h2>We sell beverages and such!</h2>
+            <hr>
+            <!--Div is the relative reference point needed to center align the ttile using absolute position-->
+            <div style="position: relative; padding-bottom: 30px;">
+                <h3 class="center-align">Domestic Products</h3>
+            </div>
+            <br>
+            <!--Webpage welcoming message for Domestic Products-->
+            <div class="table" style="line-height: 30px">
+                <div class="column">
+                    <p>The Beverage Company, your one-stop shop for all your favorite drinks and snacks! Our online store offers a wide selection of beverages, ranging from coffee to soda, and snacks, including chips, candies, and baked goods in both, domestic and international markets.</p>
+                </div>
+                <div class="column">
+                    <p>We believe in providing our customers with the best quality products at affordable prices. With fast and convenient shipping, you can enjoy a tasty treat no matter where you are. Browse our selection of domestic products today, to satisfy your cravings!</p>
+                </div>
+            </div>
+            <table>
+                <caption class="margin-bottom-10px">
+                    <h4 id="caption-title">Inventory in Stock</h4>
+                    <details class="caption-details-font">
+                        <summary style="text-decoration: underline">Help</summary>
+                        <div>
+                            <p>This table contains the products currently in stock.</p> 
+                            <p>Columns 1 through 5, contain the product image, the product name, the product description, the product price, the product rating, repectively.</p>
+                            <p>The last column contains the button to add product to cart.</p>
+                        </div>
+                    </details>
+                </caption>
+                <thead>
+                    <!-- Header row for table; as part of -->
+                    <tr id="header-font">
+                        <th>Product Image</th>
+                        <th>Product Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Rating</th>
+                        <th>Add to Cart</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Start of table body; each row in table within <tr></tr>-->
+                    <tr>
+                        <td><img src="../images/cokecan.jpg.webp" alt="Product 1" style="width:180px; height:215px;"></td>
+                        <!-- Image is from us.coca-cola.com.  Retrieved from https://us.coca-cola.com/store/coke-can-coin-bank-->
+                        <td>Classic 12oz Coca-Cola Soda Can </td>
+                        <td>With its crisp, refined, carbonated sweetened taste, there is a reason why Coca-Cola remains as the world's best-selling carbonated beverage.  </td>
+                        <td>$2.50/ea.</td>
+                        <td>5/5 Stars</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/dietcokecan.jpg" alt="Product 2" style="width:180px; height:215px;"></td>
+                        <!-- Image is from midtowneva.com.  Retrieved from https://midtowneva.com/beverage/diet-coke-can-->
+                        <td>Classic 12oz Diet Coke Soda Can</td>
+                        <td>Try the most popular sugar-free, low-calorie carbonated beverage ever produced by Coca-Cola.  With its artificial sweetners, you will not believe you are drinking a Coke!</td>
+                        <td>$2.50/ea.</td>
+                        <td>4.1/5.0 stars</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/drpeppercan.jpg.webp" alt="Product 3" style="width:180px; height:215px;"></td>
+                        <!-- Image is from walmart.com.  Retrieved from https://www.walmart.com/ip/Doctor-Pepper-Soda-12oz-Cans-Pack-of-48/121257056?wmlspartner=wlpa&selectedSellerId=101022992&adid=22222222227000000000&wl0=&wl1=g&wl2=c&wl3=42423897272&wl4=pla-51320962143&wl5=1020414&wl6=&wl7=&wl8=&wl9=pla&wl10=261004299&wl11=online&wl12=121257056_101022992&veh=sem&gclid=Cj0KCQiAz9ieBhCIARIsACB0oGIam38vVsabwG4WtW_hdR0GiVj2q0bLMdKl1yfwX9Fha_X5F2EtyeMaAm2REALw_wcB-->
+                        <td>Traditional 12oz Dr. Pepper Soda Can</td>
+                        <td>Give it a try! With 23 flavors that somehow work well together, this delicious carbonated beverage can be said to be the best invention humanity has ever seen.</td>
+                        <td>$2.50/ea.</td>
+                        <td>5.0/5.0 stars</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/doritos.jpg.webp" alt="Product 4" style="width:180px; height:215px;"></td>
+                        <!-- Image is from foodservicedirect.com.  Retrieved from https://www.foodservicedirect.com/doritos-nacho-cheese-tortilla-chips-1-75-ounce-64-per-case-21204082.html gclid=Cj0KCQiAz9ieBhCIARIsACB0oGIMkh_Os8zTelSkU6zTZy7jJALqP255aPky_DBnfi80mryo
+                        ZbDSMaAqzjEALw_wcB-->
+                        <td>Doritos 1.75oz Nacho Cheese</td>
+                        <td>You heard that right! 1.75oz of delicious nacho cheese chip flavor in your mouth. Also a great way to start a camp fire in the absence of wood. You just need some fire to get it going.  Forget about the expiration date, since these chips will remain crisp years to come! </td>
+                        <td>$2.00/ea.</td>
+                        <td>4.0/5.0 stars</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/lays.jpg" alt="Product 5" style="width:180px; height:215px;"></td>
+                        <!-- Image is from roundeyesupply.com.  Retrieved from https://www.roundeyesupply.com/p/de589129-lays-classic-potato-chips-1-ozutm_medium=paid&utm_keyword=&utm_source=google&utm_campaign=17338921169&utm_network=x&utm_placement=&utm_source=&utm_prodid=DE589129&gclid=Cj0KCQiAz9ieBhCIARIsACB0oGKISLac6z3WlV5pkNpL3s4ZPVH2awTw911Q5vWvA3lxbBqnkqmbxbYaAvDyEALw_wcB-->
+                        <td>Classic Lay's 1.75oz Potatoe Chip Flavor</td>
+                        <td>It does not get more classic than the Lay's Classic potatoe chip flavor! In good times or bad times, watching a movie or celebrating out with friends, you can never go wrong with classic potatoe chips.  Lay's has been providing these classic chips for more than 75 years.  Givde them a try!</td>
+                        <td>$2.00/ea.</td>
+                        <td>3.9/5.0 stars</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/cheezit.jpg.webp" alt="Product 6" style="width:180px; height:215px;"></td>
+                        <!-- Image is from walmart.com.  Retrieved from https://www.walmart.com/ip/Cheez-It-DUOZ-Cheddar-and-Parmesan-Cheese-Crackers-12-4-oz/24553281-->
+                        <td>Cheez-It 12.4oz Duoz Sharp Cheddar and Parmesan Flavor</td>
+                        <td>What is better than just one flavlor you may ask? That is right! Two flavors.  Cheez-it change the snack industry with this one.  Now offering Cheez-it in sharp cheddar and parmesan flavor.  Do not get tired of the same cheddar taste, when you can combine it with parmesan.</td>
+                        <td>$3.99/ea.</td>
+                        <td>4.7/5.0 stars</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <footer class="footer">
+                <sup>*</sup> For information or questions, call <span class="phone">(555) 238-3454, ext. 251</span>
+            </footer>
+        </div>
+    </body>
+</html>

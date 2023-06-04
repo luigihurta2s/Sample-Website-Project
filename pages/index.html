@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="description" content="Homepage: index.html">
+        <meta name="keywords" content="beverage,store,drink,snack">
+        <meta name="generator" content="Brackets">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Beverage Company</title>
+        <link rel="stylesheet" href="../css/homework.css">
+        <!--Embedded Style; used in the past with embedded style-->
+        <style>
+            span {
+                background-color: rgba(255,255,0,.4);
+                font-family: Courier, Arial, Courier;
+            }
+            h3 {
+                font-size: 30px;
+                font-weight: bold;
+                color: forestgreen;
+                text-decoration: underline;
+            }
+            .center {
+                text-align: center;
+            }
+            .bigger-font {
+                font-size: 20px;
+                line-height: 200%;
+                color: yellow;
+            }
+            #review-wrapper {
+                color: white;
+                padding: 20px;
+                border-style: dashed;
+                border-width: 5px;
+                border-color: aqua;
+            }
+            #intro {
+                font-weight: bold;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+    <!--Needed padding to fix spacing in main page title-->
+    <body class="padding-0">
+        <!--Navigation Menu on the left side-->
+        <div id="menu">
+            <span class="menu-title">PAGES</span>
+            <a class="menu-font" href="./index.html">Homepage</a>
+            <a class="menu-font" href="./homework2.html">About</a>
+            <a class="menu-font" href="./homework4.html">Services</a>
+            <a class="menu-font" href="./homework5.html">Domestic Products</a>
+            <a class="menu-font" href="./homework7.html">International Products</a>
+            <a class="menu-font" href="./homework6.html">Resources</a>
+        </div>
+        <!--Page content on the right side-->
+        <div id="content">
+            <!--Title wrapped in border box-->
+            <header>
+                <div class="title-wrapper">
+                    <h1>The Beverage Company</h1>
+                </div>
+                <h2>We sell beverages and such!</h2>
+                <nav id="nav-menu" style="padding: 0px; padding-top: 10px">
+                    
+                    <!--Main menu on top of page with in <ul></ul>-->
+                    <ul>
+                        <li><a class="menu-link" href="./home.html" target="webpage">Homepage</a></li>
+                        <li><a class="menu-link" href="./homework2.html" target="webpage">About</a></li>
+                        <li><a class="menu-link" href="./homework4.html" target="webpage">Services</a></li>
+                        <li><a class="menu-link" href="./homework5.html" target="webpage">Domestic Products</a></li>
+                        <li><a class="menu-link" href="./homework7.html">International Products</a></li>
+                        <li><a class="menu-link" href="./homework6.html" target="webpage">Resources</a></li>
+                        <li><a class="menu-link" href="#reviews" target="webpage">Go to Reviews</a></li>
+                        <li><a class="menu-link" href="#images" target="webpage">Go to Images</a></li>
+                        <li><a class="menu-link" href="https://us.coca-cola.com" target="_blank">Take Me to Coke</a></li>
+                        <li><a class="menu-link" href="https://www.pepsico.com" target="_blank">Take Me to Pepsi</a></li>
+                        <li><a class="menu-link" href="https://www.lays.com" target="_blank">Take Me to Lays</a></li>
+                        <li><a class="menu-link" href="../images/office.jpg" target="_blank">Surprise Me</a></li>
+                        <!--image is from amazon.com. Retrieved from https://m.media-amazon.com/images/I/410QKDDLFjL._AC_SY350_.jpg-->
+                    </ul> 
+                </nav>
+                <hr>
+            </header>
+            <iframe id="webpage" name="webpage" src="./home.html" width="100%" height="100%"></iframe>
+        </div>
+    </body>
+</html>

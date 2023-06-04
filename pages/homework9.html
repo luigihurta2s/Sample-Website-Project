@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="description" content="Subscriptions">
+        <meta name="keywords" content="beverage,store,drink,snack">
+        <meta name="generator" content="Brackets">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Beverage Company</title>
+        <link rel="stylesheet" href="../css/homework.css">
+        <script src="../js/homework9.js"></script>
+    </head>
+    <body id="internaltional-products-page" onload="runCSS()">
+        <!-- menu titled "PAGES" at the left of screen for easier navigation to main links-->
+        <div id="menu">
+            <span class="menu-title">PAGES</span>
+            <a class="menu-font" href="./index.html">Homepage</a>
+            <a class="menu-font" href="./homework2.html">About</a>
+            <a class="menu-font" href="./homework4.html">Services</a>
+            <a class="menu-font" href="./homework5.html">Domestic Products</a>
+            <a class="menu-font" href="./homework7.html">International Products</a>
+            <a class="menu-font" href="./homework9.html">Subscriptions</a>
+            <a class="menu-font" href="./homework6.html">Resources</a>
+        </div>
+        <div id="content">
+            <header>
+                <div class="title-wrapper">
+                    <h1>The Beverage Company</h1>
+                </div>
+                <!--Main menu on top of page with in <ul></ul>-->
+                <h2>We sell beverages and such!</h2>
+                <nav id="nav-menu" style="padding: 0px; padding-top: 10px">
+                    <ul>
+                        <li><a class="menu-link" href="./index.html">Homepage</a></li>
+                        <li><a class="menu-link" href="./homework2.html">About</a></li>
+                        <li><a class="menu-link" href="./homework4.html">Services</a></li>
+                        <li><a class="menu-link" href="./homework5.html">Domestic Products</a></li>
+                        <li><a class="menu-link" href="./homework7.html">International Products</a></li>
+                        <li><a class="menu-link" href="./homework9.html">Subscriptions</a></li>
+                        <li><a class="menu-link" href="./homework6.html">Resources</a></li>
+                        <li><a class="menu-link" href="#reviews">Go to Reviews</a></li>
+                        <li><a class="menu-link" href="#images">Go to Images</a></li>
+                        <li><a class="menu-link" href="https://us.coca-cola.com" target="_blank">Take Me to Coke</a></li>
+                        <li><a class="menu-link" href="https://www.pepsico.com" target="_blank">Take Me to Pepsi</a></li>
+                        <li><a class="menu-link" href="https://www.lays.com" target="_blank">Take Me to Lays</a></li>
+                        <li><a class="menu-link" href="../images/office.jpg" target="_blank">Surprise Me</a></li>
+                        <!--image is from amazon.com. Retrieved from https://m.media-amazon.com/images/I/410QKDDLFjL._AC_SY350_.jpg-->
+                    </ul> 
+                </nav>
+            </header>
+            <hr>
+            <!--Div is the relative reference point needed to center align the ttile using absolute position-->
+            <div id="international-section">
+                <h3 class="text-align-center">Subscriptions</h3>
+                <!--Welcoming Message-->
+                <div id="subs-intro">
+                    <p>
+                        Welcome to The Beverage Company's monthly subscription service! With our monthly subscription, you will indugle in some of the finest beverages and snacks available in both, the domestic and international markets.  The Beverage Company's monthly subscription is designed for those who want to enjoy unique and carefully selected beverages and snacks to sample, delivered right to your doorstep every month.
+                    </p>
+                    <p>
+                        Our expert team works tirelessly to curate an exclusive range of beverages and snacks from all over the world, including coffee, tea, and other specialty drinks. We understand that everyone has their own personal preferences, so we offer a choice of a subscription package to suit your individual tastes. From soda to snacks, to herbal and black teas, you can be sure that we have something to suit your preferences.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-align-center">How It Works </h3>
+                    <!--Instructions on how subscriptions work-->
+                    <ul id="subs-ul">
+                        <li>You will receive a Tier 1, Tier 2, or Tier 3 "Mystery Box," valued at $35.99, $50.99, and $99.99 respectively, depending on your choice.</li>
+                        <li>You will receive a one time piece of The Beverage Company merchandise.</li>
+                        <li>You will receive monthly discount codes to share with family and friends.</li>
+                        <li>You will receive random samples of new products hitting the market.</li>
+                        <li>You will be entered in our monthly sweep stakes to win free products and prizes.</li>
+                    </ul>
+                    <br>
+                    <p class="subs-message">
+                        All for the monthly price of ANY Tier Mystery Box!
+                    </p>
+                </div>
+            </div>
+            <br>
+            <!-- Start of Subscription Form -->
+            <h2>SIGN UP</h2>
+            <form id="subscriptionForm">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" maxlength="25" required>
+                <br><br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" maxlength="25" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" maxlength="25" required>
+                <br><br>
+                <!-- Hidden input textbox per homework 5 instructions -->
+                <input type="hidden" id="user_id" name="user_id" value="Hidden" disabled>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="10" placeholder="Minimum of 10 Characters" required>
+                <br><br>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" minlength="10" required>
+                <br><br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" size="12" maxlength="12" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                       title="Please enter correct format: ###-###-####">
+                <br><br>
+                <label for="card_number">Credit Card Number:</label>
+                <input type="text" id="card_number" name="card_number" size="19" maxlength="19" placeholder="####-####-####-####" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required title="Please enter correct format: ####-####-####-####">
+                <br><br>
+                <label for="name_on_card">Name on Card:</label>
+                <input type="text" id="name_on_card" name="name_on_card" maxlength="50" required>
+                <br><br>
+                <label for="expiration_date">Expiration Date:</label>
+                <input type="text" id="expiration_date" name="expiration_date" size="4" maxlength="4" placeholder="MMYY" required>
+                <br><br>
+                <label for="cvc">3-Digit CVC:</label>
+                <input type="text" id="cvc" name="cvc" size="3" maxlength="3" placeholder="###" required>
+                <br><br>
+                <label for="charge_date">Date of Charge:</label>
+                <input type="date" id="charge_date" name="charge_date" required>
+                <br><br>
+                <label for="quantity">Number of Subscriptions:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <br><br>
+                <label for="tier">Subscription Tier:</label>
+                <select id="tier" name="tier" size="3" required>
+                    <option value="1" selected>Tier 1: $35.99</option>
+                    <option value="2">Tier 2: $50.99</option>
+                    <option value="3">Tier 3: $99.99</option>
+                </select>
+                <br><br>
+                <fieldset>
+                    <legend>One-Time Free Merchandise</legend>
+                    <input type="radio" id="shirt" name="free" value="Shirt">
+                    <label for="shirt">Shirt</label><br>
+                    <input type="radio" id="hat" name="free" value="Baseball Hat">
+                    <label for="hat">Baseball Hat</label><br>
+                    <input type="radio" id="tumbler" name="free" value="Tumbler">
+                    <label for="tumbler">Tumbler</label><br>
+                </fieldset>
+                <br>
+                <!-- Per homework 5 instructions, Color Picker that uses input -->
+                <label for="preferred_color">Merch Preferred Color:</label>
+                <input type="color" id="preferred_color" name="color">
+                <br><br>
+                <label for="notes">Notes:</label><br>
+                <textarea id="notes" name="notes" maxlength="250"></textarea>
+                <br><br>
+                <input type="submit" form="subscriptionForm" onclick="processForm(this.form);" value="Submit">
+
+            </form>
+            <br><br>
+            <div class="output">
+                <output style="color: white" id="output" form="subscriptionForm"></output>
+            </div>
+            <footer class="footer">
+                <sup>*</sup> For information or questions, call <span class="phone">(555) 238-3454, ext. 251</span>
+            </footer>
+        </div>
+    </body>
+</html>

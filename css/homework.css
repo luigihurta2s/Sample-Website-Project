@@ -1,0 +1,704 @@
+/*
+COLORS USED:
+turquoise: #40e0d0
+yellow: #ffff00
+forestgreen: #228b22
+black: #000000
+white: #ffffff
+fuchsia: #ff00ff
+antiquewhite: #faebd7
+cyan: #00ffff
+deepskyblue: #00bfff
+lightgreen: #90EE90
+*/
+
+
+/* HTML element selectors*/
+
+/* used for main title */
+h1 {
+    text-align: center;
+    letter-spacing: normal;
+    color: white;
+    font-size: 50px;
+}
+
+/* used for subtitle(s) */
+h2 {
+    text-align: center;
+    letter-spacing: normal;
+    color: fuchsia;
+    margin-bottom: .3em;
+}
+
+/* main generic body style */
+body {
+    background: black;
+    color: white;
+    display: flex;
+    padding: 10px;
+}
+
+
+
+/* Class selectors*/
+
+/* Used for phone numbers */
+.phone {
+    text-decoration: underline;
+}
+
+/* Title wrapper style that adds a border */
+.title-wrapper {
+    color: white;
+    font: bold xx-large Times New Roman, courier;
+    padding: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: deepskyblue;
+    width: 100%;
+}
+
+/* Font used for menu */
+.menu-font {
+    font-family: Times New Roman, Prestige, monospace;
+    color: #ff00ff;
+    font-style: italic;
+    font-size: 30px;
+    display: block;
+}
+
+/* Border used for menu */
+.menu-title {
+    color: white;
+    font: bold xx-large Times New Roman, courier;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: forestgreen
+}
+
+
+
+/* ID selectors */
+/* Menu spacing and border */
+#menu {
+    margin-right: 50px;
+    margin-top: 25px;
+    border: solid;
+    padding: 10px;
+    padding-right: 20px;
+    width: 15%;
+    text-align: center;
+}
+
+/* Content margins */
+#content {
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 85%;
+}
+
+/* CSS for week 3 */
+
+/* HTML element selectors */
+/* This sets width for description */
+td:nth-of-type(3) {
+    width: 30%;
+}
+
+/* This creates borderes in table, aligns table text, and adds padding inside cells */
+table, th, td {
+    border: thin solid;
+    text-align: center;
+    padding: 10px;
+    border-spacing: 2px;
+}
+
+/* This formats borders in table, text and style */
+th, td {
+    color: black;
+    border-color: white;
+    border-style: double;
+    border-width: 2px;
+    border-spacing: 10px;
+}
+
+/* This formats caption background by creating border with background */
+caption {
+    border: double;
+    background-color: antiquewhite;
+}
+
+/* This formats even number of th (table head) in table with antiquewhite background color */ 
+th:nth-of-type(even) {
+    background-color: antiquewhite;
+}
+
+/* This formats odd number of th (table head) in table with cyan background color */
+th:nth-of-type(odd) {
+    background-color: cyan;
+}
+
+/* This formats odd number of td (table data; content) in table with cyan background color */
+td:nth-of-type(odd) {
+    background-color: antiquewhite;
+}
+
+/* This formats even number of td (table data; content) in table with cyan background color */
+td:nth-of-type(even) {
+    background-color: cyan;
+}
+
+/*Class selectors*/
+/* footer to be used in all pages */
+.footer {
+    text-align: center;
+    color: turquoise;
+    font-family: cursive, Arial, sans-serif;
+    font-variant: small-caps;
+}
+
+
+/* Adds 10px bottom margin */
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+/* Caption details font style */
+.caption-details-font {
+    font-family: fantasy, Arial, monospace;
+    color: black;
+    line-height: 20px;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+/* Displays as table */
+.table {
+    display: table;
+    border-spacing: 20px;
+} 
+/* Displays as column to table */
+.column {
+    display: table-cell;
+    padding: 10px;
+    font-family: cursive, monospace, sans-serif;
+    color: pink;
+    font-size: 20px;
+}
+/* Center image with relative position */
+.center-align {
+    position: absolute;    
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu-link {
+    background-color: forestgreen;
+    font-family: cursive, Helvetica, sans-serif;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    text-align: center;
+    /*    part of week 4, to add button look to menu*/
+    border: outset;
+    border-color: white;
+}
+
+/*ID Selectors*/
+/* Title for Products section */
+#products-page h3, #resources-page h3, #internaltional-products-page h3, #build-section h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: forestgreen;
+    text-align: center;
+}
+
+#resources-page h4 {
+    color: fuchsia;
+    font-size: 20px;
+}
+
+#resources-page img {
+    border-radius: 5px;
+    border: 10px dashed #333;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+#resources-page section {
+    border: 5px dashed;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#resources-page section a {
+    color: forestgreen;
+}
+
+#resources-page section a:default, #resources-page section a:link {
+    text-decoration: none;
+}
+
+#resources-page section a:hover {
+    background-color: greenyellow;
+    text-decoration: underline;
+}
+
+#resources-page section a:visited {
+    background-color: gray;
+    text-decoration: none;
+}
+
+#resources-page section a:active {
+    background-color: blue;
+    border: dashed 2px white;
+    border-radius: 5px;
+}
+
+/* Caption title font style */
+#caption-title {
+    text-align: center;
+    letter-spacing: normal;
+    color: black;
+    font-size: 20px;
+}
+
+/* Font style for column headers */
+#header-font {
+    font-family: cursive, Times New Roman, monospace;
+    font-size: 20px;
+}
+
+/*padding for list*/
+#nav-menu ul {
+    padding-left: 0;
+    margin-left: 0;
+    line-height: 45px;
+}
+/*display menu in line*/
+#nav-menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+/**/
+#nav-menu a {
+    text-decoration: none;
+}
+#nav-menu a:default, menu a:link {
+    background-color: forestgreen;
+    text-decoration: none;
+}
+#nav-menu a:hover {
+    background-color: greenyellow;
+    text-decoration: underline;
+}
+#nav-menu a:visited {
+    background-color: dimgray;
+    text-decoration: none;
+}
+#nav-menu a:active {
+    background-color: blue;
+}
+
+/* CSS for week 4 */
+
+/* HTML Element Selectors */
+
+/*removes border from iframe and adds background image*/
+iframe {
+    border: none; 
+    background-image: url(../images/oldWorldMap.jpg);
+}
+
+/*image map caption, adds bottom margin*/
+figcaption {
+    margin-bottom: 20px;
+}
+
+/*add linespacing for caption text*/
+figcaption ol {
+    line-height: 25px;
+}
+
+/* Class Selectors */
+
+/* Font format for body subheaders */
+.subheader {
+    color: brown;
+    font-family: fantasy, Times New Roman, monospace;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+/*format figure image map to have different properties*/
+.figure {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: dashed 10px brown;
+    background-image: url(../images/oldWorldMap.jpg);
+    /*  image is from artsourceinternational.com retrieved from https://artsourceinternational.com/wp-content/uploads/2018/04/WOR0028.jpg/*/
+    color: brown;
+}
+
+/*used to create space between world map and ifigure images*/
+.display-flex-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*use text-align property to center content. Used for hw 7 h3 so far*/
+.text-align-center {
+    text-align: center;
+}
+
+/* ID Selectors */
+
+/*fit list width to content*/
+#figure li {
+    width: fit-content;
+}
+
+/*center content using display flex*/
+#figcaption {
+    display: flex;
+    justify-content: center;
+}
+
+/*added line spacing to text in hw 7*/
+#international-section {
+    line-height: 25px;
+}
+
+/*chose a font family and size for hw 7*/
+#internaltional-products-page {
+    font-family: Arial, Times New Roman, monospace;
+    font-size: 16px;
+}
+
+/*CSS for week 4, index.html*/
+
+/* Class Selectors */
+
+/*used padding 0 in body and content inside iframe*/
+.padding-0 {
+    padding: 0;
+}
+/*used margin 0 in body and content inside home.html*/
+.margin-0 {
+    margin: 0;
+}
+
+/* ID Selectors */
+
+/*adds margin to images in home page*/
+#home-body img {
+    margin: 10px;
+}
+
+/*CSS for Week 5 */
+
+/* HTML element selectors */
+/* used to format form area */
+form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    background-color: honeydew;
+    font-family: fantasy, Times New Roman, monospace;
+    color: fuchsia;
+}
+
+/* form font styling */
+label {
+    font-weight: bold;
+    margin-top: 12px;
+    color: fuchsia;
+}
+
+/* form constraint validation using CSS */
+input:invalid:focus {background-color: rgb(255, 220, 220);}
+input:valid:focus {background-color: lightgreen;}
+
+
+/* Class Selector */
+/* formats print out in webpage */
+.output {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* formats last body of text (message) */
+.subs-message {
+    text-align: center;
+    font-family: Courier, Arial, monospace;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 22px;
+    color: forestgreen;
+}
+
+
+/* HTML ID selectors */
+/* formats introduction of subscription page */
+#subs-intro {
+    background-color: rgba(255,255,0,.4);
+    font-family: Courier, Arial, monospace;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 21px;
+    margin-bottom: 50px;
+}
+
+/* formats instructions on unordered lists */
+#subs-ul {
+    color: yellow;
+    font-family: Courier, Arial, monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*******************************************************************/
+
+/*CSS for Week 6 */
+
+/* HTML Element Selectors */
+
+/* Styling for input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 5px solid #FFEFD5;
+    border-radius: 10px;
+}
+
+/* styling for the submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: fuchsia;
+    color: white;
+    cursor: pointer;
+}
+
+/* styling for text area in notes */
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 5px solid #FFEFD5;
+    border-radius: 10px;
+}
+
+/* styling for telephone input field */
+input[type="tel"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 5px solid #FFEFD5;
+    border-radius: 10px;
+}
+
+/* styling for date input field */
+input[type="date"] {
+    align-content: center;
+    width: 65%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 5px solid #FFEFD5;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* styling for quantity fields */
+input[type="number"] {
+    align-content: center;
+    width: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 5px solid #FFEFD5;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* ID selectors */
+
+/* styling to fix "radio" form spacing */
+#size_beverages {
+    display: flex;
+}
+
+/* styling to fix "checkbox" form */
+#beverages_fieldset {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* fixes margin for both, "radio" and "checkbox" form */
+#size_beverages label, #beverages_fieldset label {
+    margin-left: 10px;
+}
+
+/* styling for "snacks to choose from" section */
+#snacks {
+    font-family: fantasy, Times New Roman, monospace;
+    font-size: 14px;
+    border: 5px solid #FFEFD5;
+}
+
+/* styling for disclaimer message */
+#disclaimer {
+    border: 10px solid #faebd7;
+    margin: 20px 0;
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*******************************************************************/
+
+/*CSS for Week 7 */
+
+/* HTML Element Selectors */
+
+/* styling for state of residency label */
+label[for="country_state"] {
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+
+/* general styling for button elements */
+button {
+    width: 30%;
+    padding: 7px;
+    border: 3px solid #40E0D0;
+    border-radius: 10px;
+    font-size: 13px;
+    color: white;
+    background-color: forestgreen;
+    cursor: pointer;
+}
+
+/* styling for button elements when hovering */
+button:hover {
+    background-color: #FAEBD7;
+}
+
+/* ID selectors */
+
+/* styling for state of residency input box */
+#country_state {
+    padding: 10px;
+    border: 5px solid #FFEFD5;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* styling for date input field */
+#newsletter input[type="date"] {
+    width: auto;
+    margin-left: 0px;
+}
+
+/* styling for button elements; flex, centered, and gap */
+#centered_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* styling for output table to be centered + border */
+#customerTable {
+    margin: 0px auto;
+    padding: 20px;
+    border: 5px solid #FFEFD5;
+    border-radius: 15px;
+}
+
+/* styling for nesletter_instructions */
+#newsletter_instructions {
+    border: 10px solid #FFEFD5;
+    margin: 20px 0;
+    padding: 20px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*******************************************************************/
+
+/*CSS for Week 8 */
+
+/* HTML Element Selectors */
+
+/* styling for date input field */
+input[type="date"] {
+    width: 75%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 5px solid #FFEFD5;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* ID selectors */
+
+/* styling for t-shirt and logo size input box */
+#shirt_size, #logo_size {
+    width: 25%;
+    padding: 10px;
+    border: 5px solid #FFEFD5;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* styling for t-shirt quantity input box */
+#shirt_quantity {
+    width: 21%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 5px solid #FFEFD5;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* styling for logo color input box */
+#logo_color {
+    width: 39%;
+    border: 5px solid #FFEFD5;
+    border-radius: 10px;
+    height: 45px;
+    vertical-align: middle;
+}
+
+/* fixes margin between label and input box */
+#shirt_qty_label, #logo_color_label {
+    margin-left: 15px;
+}
+
+/*testing*/
+#build-section < div {
+    color: red;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="description" content="Build-Your-Own Box">
+        <meta name="keywords" content="beverage,store,drink,snack">
+        <meta name="generator" content="Brackets">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Beverage Company</title>
+        <link rel="stylesheet" href="../css/homework.css">
+        <script src="../js/homework10.js"></script>
+    </head>
+    <body>
+        <!-- menu titled "PAGES" at the left of screen for easier navigation to main links-->
+        <div id="menu">
+            <span class="menu-title">PAGES</span>
+            <a class="menu-font" href="./index.html">Homepage</a>
+            <a class="menu-font" href="./homework2.html">About</a>
+            <a class="menu-font" href="./homework4.html">Services</a>
+            <a class="menu-font" href="./homework5.html">Domestic Products</a>
+            <a class="menu-font" href="./homework7.html">International Products</a>
+            <a class="menu-font" href="./homework9.html">Subscriptions</a>
+            <a class="menu-font" href="./homework10.html">Build-Your-Own Box</a>
+            <a class="menu-font" href="./homework6.html">Resources</a>
+        </div>
+        <div id="content">
+            <header>
+                <div class="title-wrapper">
+                    <h1>The Beverage Company</h1>
+                </div>
+                <!--Main menu on top of page with in <ul></ul>-->
+                <h2>We sell beverages and such!</h2>
+                <nav id="nav-menu" style="padding: 0px; padding-top: 10px">
+                    <ul>
+                        <li><a class="menu-link" href="./index.html">Homepage</a></li>
+                        <li><a class="menu-link" href="./homework2.html">About</a></li>
+                        <li><a class="menu-link" href="./homework4.html">Services</a></li>
+                        <li><a class="menu-link" href="./homework5.html">Domestic Products</a></li>
+                        <li><a class="menu-link" href="./homework7.html">International Products</a></li>
+                        <li><a class="menu-link" href="./homework9.html">Subscriptions</a></li>
+                        <li><a class="menu-link" href="./homework10.html">Build-Your-Own Box</a></li>
+                        <li><a class="menu-link" href="./homework6.html">Resources</a></li>
+                        <li><a class="menu-link" href="#reviews">Go to Reviews</a></li>
+                        <li><a class="menu-link" href="#images">Go to Images</a></li>
+                        <li><a class="menu-link" href="https://us.coca-cola.com" target="_blank">Take Me to Coke</a></li>
+                        <li><a class="menu-link" href="https://www.pepsico.com" target="_blank">Take Me to Pepsi</a></li>
+                        <li><a class="menu-link" href="https://www.lays.com" target="_blank">Take Me to Lays</a></li>
+                        <li><a class="menu-link" href="../images/office.jpg" target="_blank">Surprise Me</a></li>
+                        <!--image is from amazon.com. Retrieved from https://m.media-amazon.com/images/I/410QKDDLFjL._AC_SY350_.jpg-->
+                    </ul> 
+                </nav>
+            </header>
+            <hr>
+            <!--Div is the relative reference point needed to center align the ttile using absolute position-->
+            <div id="build-section">
+                <h3>Build-Your-Own Box</h3>
+                <!--Welcoming Message-->
+                <div id="subs-intro">
+                    <p>
+                        Due to popular demand, here at The Beverage Company, we are thrill to offer you a customizable experience with our <u>Build-Your-Own Box</u> option. Our Build-Your-Own Box option allows you to become the master of your own beverage and snacking destiny. You can mix and match your favorite beverages and snacks to create the perfect box just for you.
+                    </p>
+                    <p>
+                        But wait, there is more!  We also offer exciting promotions and discounts on our products, making it easy for you to try new things or stock up on your favorites.  Whether you are looking for a quick snack or a refreshing drink, we've got you covered.
+                    </p>
+                    <p>
+                        So why not start browsing now and see what catches your eye?  We are sure you will find something delicious that you will love.  And if you have any questions or concerns, our friendly customer service team is always here to help.  We wan to <u>THANK YOU</u> for choosing us as your go-to online beverage and snack store!
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-align-center">Current Promotions and Discounts</h2>
+                    <!--Instructions on current promotions and discounts-->
+                    <ul id="subs-ul">
+                        <li>You have the flexibility to choose from individual products or mix-and-match them in any way you like from our current stocked-up inventory.</li>
+                        <li>In the purchase of at least 10 items, you will receive a %10 discount.</li>
+                        <li>In the purchase of at least 20 items, you will receive a %20 discount.</li>
+                        <li>In the purchase of at least 30 items, you will receive a %30 discount.</li>
+                        <li>Regardless of the quantity purchased, we offer a flat shipping rate of $7.99 for standard shipping.</li>
+                        <li>As well as with our monthly subscription service, you will be entered in our monthly sweep stakes to win free products and prizes.</li>
+                    </ul>
+                    <br>
+                    <p class="subs-message">
+                        Free shipping when you buy $100+!
+                    </p>
+                </div>
+                <div id="disclaimer">
+                    <p>
+                        <i>DISCLAIMER</i>: Please note that all promotions and discounts are subject to change or expiration without prior notice.  Offers cannot be combined with any other discounts or promotions.  Any unauthorized use of our promotional codes, discounts or offers may result in cancellation of your order or withdrawal of the promotion at our discretion.  Discounts may not apply to taxes, shipping, or other fees.  We reserve the right to modify or cancel any promotion or discount at any time for any reason without notice.  Thank you for your understanding and happy snacking!
+                    </p>
+                </div>
+            </div>
+            <br>
+            <!-- Start of Subscription Form (user information) -->
+            <form id="box_form">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" maxlength="25" required>
+                <br><br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" maxlength="25" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" maxlength="25" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="10" placeholder="Minimum of 10 Characters" required>
+                <br><br>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="10" required>
+                <br><br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" size="12" maxlength="12" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter correct format: ###-###-####">
+                <br><br>
+                <label for="card_number">Credit Card Number:</label>
+                <input type="text" id="card_number" name="card_number" size="19" maxlength="19" placeholder="####-####-####-####" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required title="Please enter correct format: ####-####-####-####">
+                <br><br>
+                <label for="name_on_card">Name on Card:</label>
+                <input type="text" id="name_on_card" name="name_on_card" maxlength="50" required>
+                <br><br>
+                <label for="expiration_date">Expiration Date:</label>
+                <input type="text" id="expiration_date" name="expiration_date" size="4" maxlength="4" placeholder="MMYY" required>
+                <br><br>
+                <label for="cvc">3-Digit CVC:</label>
+                <input type="text" id="cvc" name="cvc" size="3" maxlength="3" placeholder="###" required>
+                <br><br>
+                <label for="charge_date">Date of Charge:</label>
+                <input type="date" id="charge_date" name="charge_date" required>
+                <br><br>
+                <!-- beverage selection -->
+                <fieldset id="beverages_fieldset">
+                    <legend>Beverages to Choose From:</legend>
+                    <div>
+                        <input type="checkbox" id="coke" name="beverage" value="coke">
+                        <label for="coke">Coca-Cola</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="diet_coke" name="beverage" value="diet_coke">
+                        <label for="diet_coke">Diet Coke</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dr_pepper" name="beverage" value="dr_pepper">
+                        <label for="dr_pepper">Dr. Pepper</label>
+                    </div>
+                </fieldset>
+                <br>
+                <!--beverage quantity for each-->
+                <label for="coke_qty">Coca-Cola Quantity:</label>
+                <input type="number" id="coke_qty" name="beverage_quantity" min="0" value="0">
+                <br><br>
+                <label for="diet_qty">Diet Coke Quantity:</label>
+                <input type="number" id="diet_qty" name="beverage_quantity" min="0" value="0">
+                <br><br>
+                <label for="dr_pepper_qty">Dr. Pepper Quantity:</label>
+                <input type="number" id="dr_pepper_qty" name="beverage_quantity" min="0" value="0">
+                <br><br>
+                <!-- beverage size selection -->
+                <fieldset id="size_beverages">
+                    <legend>Size of Beverages:</legend>
+                    <input type="radio" id="small" name="beverage_size" value="small">
+                    <label for="small">Small(8oz) $2.50/ea</label>
+                    <input type="radio" id="medium" name="beverage_size" value="medium">
+                    <label for="medium">Medium(16oz) $3.50/ea</label>
+                    <input type="radio" id="large" name="beverage_size" value="large">
+                    <label for="large">Large(1lt) $7.50/ea</label>
+                </fieldset>
+                <br>
+                <!-- snack selection -->
+                <label for="snacks">Snacks to Choose From (only one):</label>
+                <select id="snacks" name="snacks" size="3" required>
+                    <option value="doritos">1.75oz Doritos Nacho Cheese @ $2.00/ea</option>
+                    <option value="lays">1.75oz Classic Lay's Potato Chip Flavor @ $2.00/ea</option>
+                    <option value="takis">2oz Mexican Takis Fuego Spicy Chips @ $2.00/ea</option>
+                </select>
+                <br><br>
+                <!--snack quantity for each-->
+                <label for="snack_quantity">Snack Quantity:</label>
+                <input type="number" id="snack_quantity" name="snack_quantity" min="1" value="0">
+                <br><br>
+                <label for="notes">Notes:</label><br>
+                <textarea id="notes" name="notes" maxlength="250"></textarea>
+                <br><br>
+                <input type="submit" form="box_form" onclick="processForm(this.form);" value="Submit Form">
+            </form>
+            <br><br>
+            <div class="output">
+                <output style="color: white" id="output" form="box_form"></output>
+            </div>
+            <footer class="footer">
+                <sup>*</sup> For information or questions, call <span class="phone">(555) 238-3454, ext. 251</span>
+            </footer>
+        </div>
+    </body>
+</html>
